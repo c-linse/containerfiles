@@ -1,0 +1,13 @@
+FROM node:16
+
+MAINTAINER Christoph Linse
+
+#ARG NODE_VERSION
+
+RUN apt update -y && \
+    apt install -y sudo && \
+    sudo npm install -g @angular/cli
+
+WORKDIR /tmp
+
+ENTRYPOINT ["/bin/sh"]
