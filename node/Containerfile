@@ -8,6 +8,4 @@ RUN apt update -y && \
     apt install -y sudo && \
     sudo npm install -g @angular/cli
 
-WORKDIR /tmp
-
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["npm"]
