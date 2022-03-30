@@ -6,6 +6,6 @@ MAINTAINER Christoph Linse
 
 RUN apt update -y && \
     apt install -y sudo && \
-    sudo npm install -g @angular/cli
+    sudo npm install -g @angular/cli @angular-devkit/build-angular:browser
 
 ENTRYPOINT ["npm"]
